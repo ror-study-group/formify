@@ -1,0 +1,10 @@
+<%= form_for 'questionnaire_response[data]', method: :post, url: questionnaire_responses_path do |f| %>
+  <% @questions.each do |key, attrs| %>
+    <%= f.label key, attrs[:question_text] %>
+    <%= render attrs[:type], f: f, key: key, attrs: attrs %>
+    
+    <br>
+  <% end %>
+  <%= f.submit 'Submit' %>
+
+<% end %>

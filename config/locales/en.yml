@@ -20,4 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  questions:
+    name:
+      question_text: What is your name?
+      type: text_field
+    age:
+      question_text: What is your age?
+      type: number_field
